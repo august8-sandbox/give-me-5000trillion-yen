@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+footer {
+  margin-top: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 1em;
+  border-top: 1px solid #eee;
+}
+
+.logo {
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 1;
+  font-style: italic;
+  display: inline-flex;
+  flex-direction: column;
+  transform: skewX(-10deg);
+}
+
+.go-sen-chou-yen {
+  display: inline-block;
+  font-family: "Mplus 1p", sans-serif;
+  font-weight: 900;
+  margin: 0;
+  padding: 16px;
+
+  background-image:
+    linear-gradient(
+      #F30,
+      #C00 30%,
+      #920 49%,
+      #F30 51%,
+      #610 70%,
+      #100
+    );
+  position: relative;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.go-sen-chou-yen:before {
+  content: attr(data-text)"";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000;
+  padding: 16px;
+
+  color: transparent;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image:
+    linear-gradient(
+      135deg,
+      #FF0   0%,
+      #369 100%
+    );
+  -webkit-background-clip: text;
+  background-clip: text;
+  mix-blend-mode: overlay;
+}
+
+.go-sen-chou-yen:after {
+  content: attr(data-text)"";
+  display: block;
+  position: absolute;
+  background: none;
+  top: 0;
+  left: 0;
+  padding: 16px;
+
+  z-index: -1;
+  text-shadow:
+    #FFF -1px -1px 2px,
+    #FC0  0px 0px 8px,
+    #C90  1px 1px 8px,
+
+    #F33 -1px 1px 2px,
+    #F33  1px -1px 2px,
+
+    #600 -2px -2px 1px,
+    #600 -2px  2px 1px,
+    #600  2px -2px 1px,
+    #600  2px  2px 1px,
+
+    #FC0  4px  4px 1px,
+    #630  4px  2px 1px,
+    #630  4px  0px 1px,
+    #C90  4px -4px 1px,
+
+    #960 -4px  4px 1px,
+    #960 -2px  4px 1px,
+    #960  0px  4px 1px,
+    #960  2px  4px 1px,
+    #FF6  4px  4px 1px,
+
+    #960 -4px -2px 1px,
+    #960 -4px  0px 1px,
+    #FF6 -4px  2px 1px,
+
+    #000 -2px -3px 1px,
+    #000  0px -3px 1px,
+    #000  3px -3px 1px,
+    #000  5px -3px 1px,
+
+    #000  5px 0px 1px,
+    #000  0px 5px 1px,
+    #000  5px 5px 1px,
+    #000 -2px 0px 1px,
+    #000 -2px 5px 1px,
+
+    #333 -2px 6px 1px,
+    #333  8px 6px 1px,
+    #CDE  4px 12px 2px,
+
+    #311 -4px 12px 1px,
+    #311 -4px 10px 1px,
+    #311 -4px  8px 1px,
+    #311 -4px  6px 1px,
+    #311 -4px  4px 1px,
+    #311 -4px  2px 1px,
+    #311 -4px  0px 1px,
+
+    #113 -2px 12px 1px,
+    #113  0px 12px 1px,
+    #113  2px 12px 1px,
+    #113  4px 12px 1px,
+    #113  6px 12px 1px,
+    #113  8px 12px 1px,
+
+    #333  8px 10px 1px,
+    #333  8px 8px 1px,
+    #333  8px 6px 1px,
+    #333  8px 4px 1px,
+    #333  8px 2px 1px,
+    #333  8px 0px 1px,
+    #333  8px -2px 1px,
+
+    #000 0 0 0;
+}
+
+.hoshii {
+  display: block;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "Yu Mincho", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  text-align: right;
+
+  margin: 0;
+  padding: 16px;
+  background:
+    linear-gradient(
+      -60deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(64, 196, 255, 0.1)
+    ),
+    linear-gradient(
+      #CDE,
+      #FFF 40%,
+      #ACD 49%,
+      #DEF 51%,
+      #FFF 60%
+    );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+}
+
+.hoshii:after {
+  content: attr(data-text)"";
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  padding: 16px;
+
+  text-shadow:
+    #FFF -1px -1px,
+    #ABC  1px  1px 1px,
+    #39C  1px -1px 1px,
+    #69C -1px  1px 1px,
+
+    #369 -2px -2px 1px,
+    #369 -2px  0px 1px,
+    #369  2px  2px 1px,
+    #369  2px  0px 1px,
+    #369  2px -2px 1px,
+    #369  0px -2px 1px,
+    #369 -2px  2px 1px,
+
+    #FFF -2px -3px 1px,
+    #FFF  0px -3px 1px,
+    #FFF  2px -3px 1px,
+    #FFF  4px -3px 1px,
+
+    #CDE  4px -2px 1px,
+    #CDE  4px  0px 1px,
+    #CDE  4px  2px 1px,
+    #CDE  4px  4px 1px,
+
+    #CDE  2px  4px 1px,
+    #CDE  0px  4px 1px,
+    #CDE -2px  4px 1px,
+
+    #CDE -2px  4px 1px,
+    #CDE -2px  2px 1px,
+    #CDE -2px  0px 1px,
+    #CDE -2px -2px 1px,
+
+    #369 -4px -4px 1px,
+    #369 -2px -5px 1px,
+    #369  0px -5px 1px,
+    #369  2px -5px 1px,
+    #369  4px -5px 1px,
+    #369  6px -4px 1px,
+
+    #123  6px -2px 1px,
+    #123  6px  0px 1px,
+    #123  6px  2px 1px,
+    #123  6px  4px 1px,
+    #123  6px  6px 1px,
+
+    #123  4px  6px 1px,
+    #123  2px  6px 1px,
+    #123  0px  6px 1px,
+    #123 -2px  6px 1px,
+    #123 -4px  6px 1px,
+
+    #123 -4px  4px 1px,
+    #123 -4px  2px 1px,
+    #123 -4px  0px 1px,
+    #123 -4px -2px 1px,
+
+    #ABC  6px  4px 8px,
+    #333 -2px  6px 1px,
+    #333  8px  6px 1px,
+    #CCC  8px  0px 1px,
+    #CDE  2px 12px 2px,
+
+    #123 -3px 12px 1px,
+    #123 -3px 10px 1px,
+    #123 -3px  8px 1px,
+    #123 -3px  6px 1px,
+    #123 -3px  4px 1px,
+    #123 -3px  2px 1px,
+    #123 -3px  0px 1px,
+    #123 -3px -2px 1px,
+
+    #123  0px 12px 1px,
+    #123  4px 12px 1px,
+    #123  8px 12px 1px,
+    #113  8px 10px 1px,
+    #113  8px 8px 1px,
+    #113  8px 6px 1px,
+    #113  8px 4px 1px,
+    #113  8px 2px 1px,
+    #113  8px 0px 1px,
+    #113  8px -2px 1px,
+
+    #000 0 0 0;
+}
+
+#controller {
+  padding: 8px 16px;
+  border-bottom: 1px solid #eee;
+}

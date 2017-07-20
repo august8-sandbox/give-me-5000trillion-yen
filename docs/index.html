@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>5000兆円</title>
+    <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>暇だったらUI作り込んで画像として保存できる感じにする。</div>
+    <div id="controller">
+      <label>赤文字(上段)</label><input type="text" value="5000兆円" onInput="sync(this, 'logo-upper')" />
+      <label>白文字(下段)</label><input type="text" value="欲しい！" onInput="sync(this, 'logo-lower')" />
+    </div>
+    <div class="logo">
+      <span id="logo-upper" class="go-sen-chou-yen" data-text="5000兆円">5000兆円</span>
+      <span id="logo-lower" class="hoshii" data-text="欲しい!">欲しい!</span>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
