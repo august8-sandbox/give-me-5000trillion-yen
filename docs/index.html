@@ -9,10 +9,13 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div>暇だったらUI作り込んで画像として保存できる感じにする。</div>
     <div id="controller">
-      <label>赤文字(上段)</label><input type="text" value="5000兆円" onInput="sync(this, 'logo-upper')" />
-      <label>白文字(下段)</label><input type="text" value="欲しい！" onInput="sync(this, 'logo-lower')" />
+      <div>
+        <label>赤文字(上段)</label><input type="text" value="5000兆円" onInput="sync(this, 'logo-upper')" />
+      </div>
+      <div>
+        <label>白文字(下段)</label><input type="text" value="欲しい！" onInput="sync(this, 'logo-lower')" />
+      </div>
     </div>
     <div class="logo">
       <span id="logo-upper" class="go-sen-chou-yen" data-text="5000兆円">5000兆円</span>
